@@ -1,0 +1,9 @@
+/*
+ * 《翻》FLIP — 单文件版 Tailwind 入口
+ * 引入全书样式（与 Next 版同一份 globals.css），并显式声明源扫描范围。
+ * 由 @tailwindcss/cli 编译为 app.css 后内联进 index.html。
+ */
+@import "../src/app/globals.css";
+
+@source "../src";
+@source "./entry.tsx";
